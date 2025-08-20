@@ -1,0 +1,164 @@
+:root {
+    --brand: #0d6efd;
+    --ink: #1b1f24;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--ink);
+}
+
+/* Navbar */
+
+/* Responsive logo image in navbar */
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 32px;
+        max-width: 90px;
+    }
+}
+
+.navbar.sticky {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    background: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 80vh;
+    background: url('https://media.istockphoto.com/id/1480308654/vector/university-01.jpg?s=612x612&w=0&k=20&c=RQYm8O1zn6KIOp0LbwpDN7BjhEVCIeo3hGj6L4ghS4Q=') center/cover no-repeat;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(86, 86, 88, 0.75);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.scroll-down {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.scroll-down a {
+    color: var(--brand);
+    animation: bounce 1.5s infinite;
+}
+
+/* Animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s forwards;
+}
+
+.fade-up.delay-1 {
+    animation-delay: .3s;
+}
+
+.fade-up.delay-2 {
+    animation-delay: .6s;
+}
+
+.fade-up.delay-3 {
+    animation-delay: .9s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Section headings */
+.section-title {
+    font-weight: 800;
+    letter-spacing: .3px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .7s ease;
+}
+
+.section-subtitle {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .7s ease .15s;
+    max-width: 720px;
+    margin-inline: auto;
+}
+
+/* Cards */
+.feature-card {
+    transition: transform .4s ease, box-shadow .4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+/* Partner carousel */
+.partner-logo {
+    object-fit: contain;
+    height: 70px;
+    filter: grayscale(100%);
+    opacity: .85;
+}
+
+/* Footer */
+.footer {
+    background: #0b1324;
+    color: #dbe1f1;
+}
+
+.footer a {
+    color: #9ec5fe;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Animation visible state */
+.animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
