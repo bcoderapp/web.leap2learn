@@ -1,6 +1,8 @@
 :root {
-    --brand: #0d6efd;
-    --ink: #1b1f24;
+    --brand_primary: #5A7DC1;
+    --brand_secondary: #E9B85E;
+    --brand_tertiary: #fcf9f2;
+    --ink: #091A34;
 }
 
 html {
@@ -9,8 +11,41 @@ html {
 
 body {
     color: var(--ink);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-
+section {
+    padding: 80px 0 !important;
+}
+.section_header {
+    text-align: center;
+    margin-bottom: 50px !important;
+}
+.my_bg_light {
+    background-color: var(--brand_tertiary);
+}
+.my_button {
+    background-color: var(--brand_secondary);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.my_button:hover {
+    background-color: #cd9a3b;
+    transform: translateY(-2px);
+}
+.my_icons {
+    color: var(--brand_secondary);
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.my_brand_text {
+    color: var(--brand_primary);
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 /* Navbar */
 
 /* Responsive logo image in navbar */
@@ -36,7 +71,7 @@ body {
 .hero {
     position: relative;
     min-height: 80vh;
-    background: url('https://media.istockphoto.com/id/1480308654/vector/university-01.jpg?s=612x612&w=0&k=20&c=RQYm8O1zn6KIOp0LbwpDN7BjhEVCIeo3hGj6L4ghS4Q=') center/cover no-repeat;
+    background: url('https://grahampelton.com/wp-content/uploads/2025/01/higher-education-fundraising-consulting.jpeg') center/cover no-repeat;
     color: var(--ink);
     display: flex;
     align-items: center;
@@ -47,7 +82,7 @@ body {
 .hero .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(86, 86, 88, 0.75);
+    background: rgba(215, 215, 251, 0.401);
 }
 
 .hero .container {
@@ -66,6 +101,32 @@ body {
     animation: bounce 1.5s infinite;
 }
 
+/* About */
+#about {
+    background: var(--brand_primary);
+    color: #fff;
+    padding: 5rem 0;
+}
+.about-title {
+    font-weight: 800;
+    letter-spacing: .3px;
+    opacity: 100%;
+    transition: all .7s ease;
+    margin-bottom: 1.5rem;
+}
+.colored_2 {
+    color: var(--brand_secondary);
+    font-size: 2.5rem;
+}
+.about-subtitle {
+    max-width: 85%;
+    margin-inline: auto;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 400;
+    opacity: 0.95;
+    letter-spacing: 0.2px;
+}
 /* Animations */
 .fade-up {
     opacity: 0;
@@ -143,8 +204,8 @@ body {
 
 /* Footer */
 .footer {
-    background: #0b1324;
-    color: #dbe1f1;
+    background: var(--brand_primary);
+    color: #fff;
 }
 
 .footer a {
