@@ -28,7 +28,7 @@ section {
 }
 
 .section_header i {
-    color: var(--brand_secondary);
+    color: var(--brand_primary);
 }
 
 .section-title {
@@ -47,7 +47,7 @@ section {
     transition: all .7s ease .15s;
     max-width: 720px;
     margin-inline: auto;
-    color: var(--brand_primary);
+    color: #707070;
 }
 
 .my_bg_light {
@@ -55,7 +55,7 @@ section {
 }
 
 .my_button {
-    background-color: var(--brand_secondary);
+    background-color: var(--ink);
     color: #fff;
     border-radius: 5px;
     padding: 10px 20px;
@@ -65,17 +65,18 @@ section {
 
 .my_button:hover {
     background-color: var(--brand_primary);
+    color: #fff !important;
     transform: translateY(-2px);
 }
 
 .my_dark_icons {
-    color: var(--brand_secondary);
+    color: var(--brand_primary);
     font-size: 24px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .my_brand_text {
-    color: var(--brand_primary);
+    color: var(--ink);
     font-weight: bold;
     font-size: 24px;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -92,7 +93,7 @@ section {
 
 /* Navbar sticky style when scrolled */
 .navbar.sticky {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    box-shadow: 0 10px 30px rgba(71, 71, 71, 0.06);
     background: var(--ink) !important;
     color: #313131 !important;
 }
@@ -121,7 +122,7 @@ section {
 .hero {
     position: relative;
     min-height: 85vh;
-    background: url('https://grahampelton.com/wp-content/uploads/2025/01/higher-education-fundraising-consulting.jpeg') center/cover no-repeat;
+    background: url('https://www.informatica.com/content/dam/informatica-com/en/images/c01v2/c01v2-education_1440x540.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +136,7 @@ section {
 }
 
 .hero .container {
-    padding-top: 10%;
+    padding-top: 15%;
     position: relative;
     z-index: 2;
     color: #ffffff !important;
@@ -170,10 +171,13 @@ section {
     transition: all .7s ease;
     margin-bottom: 1.5rem;
 }
-
+.colored_ {
+    color: var(--brand_primary) !important;
+    font-size: 3rem;
+}
 .colored_2 {
     color: var(--brand_secondary);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .about-subtitle {
@@ -224,23 +228,24 @@ section {
     }
 }
 
-/* Cards */
-.feature-card {
-    transition: transform .4s ease, box-shadow .4s ease;
-    opacity: 0;
-    transform: translateY(40px);
+/* Services */
+.service_feature_card {
+    margin: auto;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 25px 0 25px 0;
+    border: 0.25px solid #e0e0e0;
+    border-bottom: 4px solid var(--ink);
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(141, 141, 141, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
-
-.feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+.service_feature_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(141, 141, 141, 0.2);
+    border-bottom: 4px solid var(--brand_primary);
 }
-/* Services Styles */
-#services .feature-card {
-    background: var(--brand_tertiary)
-}
-
-
 /* Partner carousel */
 .partner-logo {
     object-fit: contain;
@@ -254,7 +259,7 @@ section {
     
 }
 #faq .faq_area{
-    width: 70%;
+    width: 80%;
 }
 #faq .accordion-item {
     border: none;
@@ -265,7 +270,7 @@ section {
 }
 
 #faq .accordion-button {
-    background-color: var(--brand_secondary);
+    background-color: var(--brand_primary);
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
