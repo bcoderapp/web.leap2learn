@@ -6,6 +6,9 @@
         height: 32px;
         max-width: 90px;
     }
+    #faq .faq_area{
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
