@@ -1,425 +1,746 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Leap2Learn - Gateway to Dream</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Leap2Learn - Gateway to Dream</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/styles.css" rel="stylesheet">
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+<body class="index-page">
 
-    <!-- Navbar -->
-    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-2">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home">
-                <img src="assets/images/logo_light.png" alt="Leap2Learn Logo" class="img-fluid" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#destinations"
-                            data-bs-toggle="dropdown">Destinations</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#destinations">Top Countries</a></li>
-                            <li><a class="dropdown-item" href="#services">Application Support</a></li>
-                            <li><a class="dropdown-item" href="#partners">Partner Universities</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#services" data-bs-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#services">Counseling</a></li>
-                            <li><a class="dropdown-item" href="#services">Visa Guidance</a></li>
-                            <li><a class="dropdown-item" href="#services">Scholarships</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown"><a href="#destination"><span>Destinations</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">United Kingdom</a></li>
+              <li><a href="#">United States</a></li>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Netherlands</a></li>
+              <li><a href="#">Malta</a></li>
+            </ul>
+          </li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#featured-services">Categories</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Apply Now</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Left Side Content -->
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>Shape Your Future with Leap2Learn</h1>
+            <p>Your trusted partner for studying abroad. Explore top universities, discover new opportunities, and take
+              the first step towards your dream career.</p>
+            <div class="d-flex">
+              <a href="#counselling" class="btn-get-started"><strong>Apply Now</strong></a>
+              <a href="https://youtu.be/iUtnZpzkbG8?si=YL16t2L97dHdXjHC"
+                class="glightbox btn-watch-video d-flex align-items-center">
+                <i class="bi bi-play-circle"></i>
+                <span>Success Stories</span>
+              </a>
             </div>
+          </div>
+          <!-- Right Side Image -->
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Leap2Learn - Study Abroad">
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
+    <!-- /Hero Section -->
 
-    <!-- Hero -->
-    <header id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="container">
-            <h1 class="display-4 fw-bold fade-up">Unlock Your Global Future with Leap<span class="colored_">2</span>Learn</h1>
-            <p class="lead mb-4 fade-up delay-1">Expert guidance, world-class opportunities, and personalized support
-                for your study abroad dreams.</p>
-            <a href="#contact" class="mt-4 btn my_button btn-md fade-up delay-2"><i
-                    class="bi bi-pencil-square me-2"></i>Apply Now</a>
-            <div class="scroll-down fade-up delay-3 hero_scroll_down"><a href="#about"><i
-                        class="bi bi-chevron-double-down"></i></a>
+
+    <!-- About Section -->
+    <section id="about" class="about section accent-background">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <span>WELCOME</span>
+        <h2>Welcome to LEAP2LEARN</h2>
+        <p>Gateway to Dream - helping students achieve their study abroad goals with expert guidance and complete
+          support.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="about-text">
+          <p> Leap2Learn is your gateway to global education. With expert guidance and tailored support, we help you
+            secure admissions to top universities in the UK, USA, Canada, Australia, Germany, Japan, and beyond. Choose
+            Leap2Learn for a seamless, successful study abroad experience.</p>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+
+
+    <!-- Destination Section -->
+    <section id="destination" class="destination section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Destinations</span>
+        <h2>Study Destinations</h2>
+        <p>Explore the top countries for international students and find the right destination for your academic
+          journey.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- Filters -->
+          <ul class="destination-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-europe">Europe</li>
+            <li data-filter=".filter-northamerica">North America</li>
+            <li data-filter=".filter-uk">UK</li>
+          </ul><!-- End Destination Filters -->
+
+          <!-- Destination Items -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- United Kingdom -->
+            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-uk filter-uk">
+              <img src="assets/img/destination/uk.png" class="img-fluid rounded-3 shadow-sm" alt="United Kingdom">
+              <div class="destination-info">
+                <h4>United Kingdom</h4>
+                <p>World-class universities, rich culture, and a vibrant student community.</p>
+                <a href="destination-uk.html" class="details-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div><!-- End Destination Item -->
+
+            <!-- United States -->
+            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-northamerica">
+              <img src="assets/img/destination/usa.png" class="img-fluid rounded-3 shadow-sm" alt="USA">
+              <div class="destination-info">
+                <h4>United States</h4>
+                <p>Home to Ivy League schools, cutting-edge research, and global career opportunities.</p>
+                <a href="destination-usa.html" class="details-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div><!-- End Destination Item -->
+
+            <!-- Canada -->
+            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-northamerica">
+              <img src="assets/img/destination/ca.png" class="img-fluid rounded-3 shadow-sm" alt="Canada">
+              <div class="destination-info">
+                <h4>Canada</h4>
+                <p>Affordable education, post-study work opportunities, and a welcoming environment.</p>
+                <a href="destination-canada.html" class="details-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div><!-- End Destination Item -->
+
+            <!-- Netherlands -->
+            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-europe">
+              <img src="assets/img/destination/ned.png" class="img-fluid rounded-3 shadow-sm" alt="Netherlands">
+              <div class="destination-info">
+                <h4>Netherlands</h4>
+                <p>Known for English-taught programs, innovation, and international diversity.</p>
+                <a href="destination-netherlands.html" class="details-link"><i
+                    class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div><!-- End Destination Item -->
+
+            <!-- Malta -->
+            <div class="col-lg-4 col-md-6 destination-item isotope-item filter-europe">
+              <img src="assets/img/destination/malta.png" class="img-fluid rounded-3 shadow-sm" alt="Malta">
+              <div class="destination-info">
+                <h4>Malta</h4>
+                <p>Study in Europe with a warm Mediterranean lifestyle and historic charm.</p>
+                <a href="destination-malta.html" class="details-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div><!-- End Destination Item -->
+          </div><!-- End Destination Container -->
+        </div>
+      </div>
+    </section><!-- /Destination Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <span>Services</span>
+        <h2>Our Services</h2>
+        <p>Comprehensive guidance and tailored support for every step of your study abroad journey.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Counseling -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h3>Counseling</h3>
+              <p>One-on-one expert guidance to help you choose the right program, university, and country.</p>
             </div>
+          </div>
+          <!-- Visa Guidance -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-passport-fill"></i></div>
+              <h3>Visa Guidance</h3>
+              <p>Step-by-step assistance to ensure a smooth and successful student visa application.</p>
+            </div>
+          </div>
+          <!-- Scholarships -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-award-fill"></i></div>
+              <h3>Scholarships</h3>
+              <p>Helping you identify and apply for scholarships to ease your financial burden.</p>
+            </div>
+          </div>
+          <!-- Accommodation -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-house-fill"></i></div>
+              <h3>Accommodation</h3>
+              <p>Guidance in finding safe, affordable housing near your chosen university.</p>
+            </div>
+          </div>
+          <!-- Career Counseling -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+              <h3>Career Counseling</h3>
+              <p>Advising on career pathways, internships, and future job opportunities abroad.</p>
+            </div>
+          </div>
+          <!-- Pre-Departure -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-airplane-fill"></i></div>
+              <h3>Pre-Departure</h3>
+              <p>Workshops and resources to prepare you for life abroad before you even board your flight.</p>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
+    <!-- /Services Section -->
 
-    <!-- About -->
-    <section id="about">
-        <div class="container text-center">
-            <h2 class="about-title fade-up">Welcome to LEAP<span class="colored_2">2</span>LEARN</h2>
-            <p class="about-subtitle fade-up delay-1">
-                Leap2Learn is your gateway to global education. With expert guidance and tailored support, we help you
-                secure admissions to top universities in the UK, USA, Canada, Australia, Germany, Japan, and beyond.
-                Choose Leap2Learn for a seamless, successful study abroad experience.
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <span>Categories</span>
+        <h2>Study Abroad Options</h2>
+        <p>Explore diverse academic pathways with personalized support to help you succeed at every stage of your
+          education journey abroad.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Undergraduate -->
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-mortarboard icon"></i></div>
+              <h4><a href="#" class="stretched-link">Undergraduate Programs</a></h4>
+              <p>Start your global education with world-class bachelor’s degrees in top universities across the UK, USA,
+                Canada, and beyond.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Graduate -->
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-journal-bookmark icon"></i></div>
+              <h4><a href="#" class="stretched-link">Postgraduate Programs</a></h4>
+              <p>Advance your career with internationally recognized master’s degrees, research opportunities, and
+                industry-linked courses.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- PhD -->
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-lightbulb icon"></i></div>
+              <h4><a href="#" class="stretched-link">Doctoral Studies (PhD)</a></h4>
+              <p>Pursue groundbreaking research with expert supervision and access to advanced facilities at globally
+                ranked institutions.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /Featured Services Section -->
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section accent-background">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Take The First Step Toward Your Global Future With Us. </h3>
+              <p>Our experienced counselors are ready to guide you with admissions, visas, scholarships, and everything you need to succeed.</p>
+              <a class="cta-btn" href="#contact">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Call To Action Section -->
+
+
+    <!-- Partner Universities Section -->
+    <section id="partners" class="partners section">
+
+      <!-- Section Title -->
+      <div class="container section-title text-center" data-aos="fade-up">
+        <span>Our Partners</span>
+        <h2>Partner Universities</h2>
+        <p>We proudly collaborate with globally recognized universities to bring you the best opportunities for higher
+          education abroad.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="owl-carousel partners-carousel fade-in">
+
+          <!-- Partner Logos -->
+          <div class="item">
+            <img src="assets/img/logo.png" alt="University of Oxford" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.png" alt="Harvard University" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.png" alt="University of Toronto" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.png" alt="TU Delft" />
+          </div>
+          <div class="item">
+            <img src="assets/img/logo.png" alt="University of Malta" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Partner Universities Section -->
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Testimonials</span>
+        <h2>What Our Students Say</h2>
+        <p>Real experiences from students who achieved their study abroad dreams with Leap2Learn’s guidance.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000"
+          data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Leap2Learn made my UK university application process so simple. From selecting the right course
+                    to preparing my visa, their support was outstanding!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonial_1.png" class="testimonial-img" alt="Student testimonial">
+                <h3>Arif Rahman</h3>
+                <h4>Now studying at University of Leeds</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I was confused about scholarships, but Leap2Learn guided me step by step. Today, I’m in Canada
+                    with a partial scholarship. Couldn’t be happier!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonial_2.png" class="testimonial-img" alt="Student testimonial">
+                <h3>Sarah Khan</h3>
+                <h4>Studying Computer Science in Canada</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>From IELTS prep to admission letters, Leap2Learn provided everything I needed. Their counsellors
+                    are friendly and truly care about your future.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonial_1.png" class="testimonial-img" alt="Student testimonial">
+                <h3>Mehedi Hasan</h3>
+                <h4>Masters in Australia</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I never thought studying in Germany was possible until Leap2Learn helped me. They assisted with
+                    every detail, even after I arrived abroad.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonial_2.png" class="testimonial-img" alt="Student testimonial">
+                <h3>Nadia Alam</h3>
+                <h4>Engineering student in Germany</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Leap2Learn gave me the confidence to apply for a PhD in the US. Their expert advice on proposal
+                    writing was exactly what I needed.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonial_1.png" class="testimonial-img" alt="Student testimonial">
+                <h3>Rafiq Chowdhury</h3>
+                <h4>PhD Candidate in the USA</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Contact</span>
+        <h2>Get in touch with US</h2>
+        <p>Schedule your free counselling session and let Leap2Learn guide you toward your study abroad dreams.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" class="php-email-form p-4 rounded-4 shadow-sm bg-white">
+
+              <div class="row gy-4">
+                <!-- First Name -->
+                <div class="col-md-4">
+                  <label for="first-name" class="pb-2">First name <span class="text-danger">*</span></label>
+                  <input type="text" name="first_name" id="first-name" class="form-control" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="col-md-4">
+                  <label for="last-name" class="pb-2">Last name <span class="text-danger">*</span></label>
+                  <input type="text" name="last_name" id="last-name" class="form-control" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-4">
+                  <label for="phone" class="pb-2">Phone number <span class="text-danger">*</span></label>
+                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="+880 1234-567890"
+                    required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="email" class="pb-2">Email address <span class="text-danger">*</span></label>
+                  <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+
+                <!-- Nationality -->
+                <div class="col-md-6">
+                  <label for="nationality" class="pb-2">Nationality <span class="text-danger">*</span></label>
+                  <select name="nationality" id="nationality" class="form-select" required>
+                    <option value="">Select</option>
+                    <option value="Bangladeshi">Bangladeshi</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Pakistani">Pakistani</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Year of Study -->
+                <div class="col-md-6">
+                  <label for="year" class="pb-2">Year of study <span class="text-danger">*</span></label>
+                  <select name="year" id="year" class="form-select" required>
+                    <option value="">Select</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                  </select>
+                </div>
+
+                <!-- Study Destination -->
+                <div class="col-md-6">
+                  <label for="destination" class="pb-2">Study destination <span class="text-danger">*</span></label>
+                  <select name="destination" id="destination" class="form-select" required>
+                    <option value="">Select</option>
+                    <option>UK</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Netherlands</option>
+                    <option>Malta</option>
+                  </select>
+                </div>
+
+                <!-- Other Destinations -->
+                <div class="col-md-6">
+                  <label for="other-destination" class="pb-2">Other destinations</label>
+                  <select name="other_destination" id="other-destination" class="form-select">
+                    <option value="">Select</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>Japan</option>
+                  </select>
+                </div>
+
+                <!-- Type of Study -->
+                <div class="col-md-6">
+                  <label for="study-type" class="pb-2">Type of study <span class="text-danger">*</span></label>
+                  <select name="study_type" id="study-type" class="form-select" required>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                    <option value="PhD">PhD</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Subject -->
+                <div class="col-md-6">
+                  <label for="subject" class="pb-2">Preferred subject <span class="text-danger">*</span></label>
+                  <input type="text" name="subject" id="subject" class="form-control"
+                    placeholder="e.g. Computer Science" required>
+                </div>
+
+                <!-- How did you hear -->
+                <div class="col-md-6">
+                  <label for="source" class="pb-2">How did you hear about Leap2Learn?</label>
+                  <select name="source" id="source" class="form-select">
+                    <option value="">Select</option>
+                    <option>Social Media</option>
+                    <option>Friend / Family</option>
+                    <option>Website</option>
+                    <option>Event</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="col-md-12">
+                  <label for="message" class="pb-2">Message</label>
+                  <textarea name="message" id="message" class="form-control" rows="4"
+                    placeholder="Tell us more about your goals..."></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your request has been sent. Thank you!</div>
+                  <button type="submit" class="btn btn-primary px-5">Submit</button>
+                </div>
+              </div>
+            </form>
+            <p class="mt-3 small text-center text-muted">
+              Leap2Learn uses the information you provide to schedule your free counselling session. You may unsubscribe
+              anytime. Please see our <a href="#">privacy policy</a>.
             </p>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- /Contact Section -->
 
-    <!-- Destinations -->
-    <section id="destinations" class="my_bg_light">
-        <div class="container text-center">
-            <div class="section_header">
-                <h2 class="section-title">Choose Your Study Destination</h2>
-                <p class="section-subtitle">Explore top destinations to achieve your academic dreams abroad.</p>
-                <i class="bi bi-caret-down-fill fs-3 fade-up delay-2"></i>
-            </div>
 
-            <div class="row mt-4">
-                <!-- 6 countries -->
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100"><img src="https://flagcdn.com/w320/gb.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">United Kingdom</h5>
-                            <p>World-renowned universities and a rich cultural heritage.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 p-3"><img src="https://flagcdn.com/w320/ca.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Canada</h5>
-                            <p>Affordable education and welcoming environment for students.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 p-3"><img src="https://flagcdn.com/w320/au.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Australia</h5>
-                            <p>Top-ranked institutions and high quality of life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 p-3"><img src="https://flagcdn.com/w320/us.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">United States</h5>
-                            <p>Leading research hubs and global innovation centers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 p-3"><img src="https://flagcdn.com/w320/de.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Germany</h5>
-                            <p>Affordable tuition and strong technical universities.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card feature-card h-100 p-3"><img src="https://flagcdn.com/w320/jp.png"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Japan</h5>
-                            <p>Cutting-edge technology and unique cultural experiences.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Stay Updated with Leap2Learn</h4>
+            <p>Subscribe to our newsletter for the latest study abroad opportunities, scholarships, and expert tips to
+              achieve your global education dreams.</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Services -->
-    <section id="services" class="">
-        <div class="container text-center">
-            <div class="section_header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">We provide comprehensive services to support your education abroad journey.
-                </p>
-                <i class="bi bi-caret-down-fill fs-3 fade-up delay-2"></i>
-            </div>
-
-            <div class="row mt-4">
-                <!-- 6 services -->
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-people-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Counseling</h5>
-                            <p>One-on-one guidance to choose the right program and country.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-passport-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Visa Guidance</h5>
-                            <p>Step-by-step support in securing your student visa hassle-free.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-award-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Scholarships</h5>
-                            <p>Assistance with finding and applying for scholarships.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-house-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Accommodation</h5>
-                            <p>Help finding safe and affordable housing near your campus.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-briefcase-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Career Counseling</h5>
-                            <p>Guidance on career pathways, internships, and jobs abroad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card service_feature_card h-100 p-3"><i class="bi bi-airplane-fill my_dark_icons fs-1"></i>
-                        <div class="card-body">
-                            <h5 class="my_brand_text">Pre-Departure</h5>
-                            <p>Workshops to prepare you for life abroad before you travel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" class="img-fluid">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Sylhet, bangladesh</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
         </div>
-    </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="faq-section py-5 my_bg_light">
-        <div class="container text-center">
-            <div class="section_header mb-4">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">
-                    Find quick answers to common queries from students like you.
-                </p>
-                <i class="bi bi-caret-down-fill fs-3 fade-up delay-2"></i>
-            </div>
-
-            <div class="faq_area mx-auto">
-                <div class="accordion mt-4" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            How do I choose the right country?
-                        </button>
-                    </h2>
-                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam tempore debitis non provident! Rem, iusto, accusamus animi dicta neque soluta minus saepe libero error est iure? Saepe expedita nesciunt perspiciatis.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            Do you help with scholarships?
-                        </button>
-                    </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eaque aliquid maiores blanditiis quis perferendis, consequatur soluta mollitia voluptatibus qui ex ad necessitatibus architecto, delectus a explicabo laborum aperiam suscipit ratione unde cum adipisci. Totam facere, praesentium natus illum eveniet minima incidunt officiis magni vel tenetur voluptatibus, velit perferendis iure.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            Is visa guidance included?
-                        </button>
-                    </h2>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere deleniti, ipsam quos velit magnam neque veniam ad. Deserunt aspernatur commodi laborum delectus labore similique et eligendi dicta expedita sint quae, dolor voluptatibus consequatur fuga repellendus, tempore facilis dignissimos ad veritatis, natus quaerat dolore. Minus corrupti explicabo adipisci voluptatem iusto deserunt natus magnam modi nesciunt dolorum neque facilis in architecto sunt ipsum eum, debitis ea perferendis sint sequi recusandae voluptatum praesentium? Incidunt deserunt id dolore numquam.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
-                            Can you arrange accommodation?
-                        </button>
-                    </h2>
-                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minima esse eligendi vero autem vel harum aliquam totam inventore maiores dolores nesciunt ab, asperiores eveniet repellat tempora, aliquid animi iste voluptatum. Molestias sapiente expedita veritatis distinctio dicta exercitationem ipsa quidem. Ullam facilis maiores sed accusantium laborum? Eaque repudiandae obcaecati suscipit distinctio! Magni sit perferendis officiis, modi quas ipsa vero! Officia optio architecto placeat, nostrum quaerat nam, distinctio voluptates possimus unde ipsum cumque molestias nemo quae doloremque assumenda eligendi repellat voluptas neque nihil illo suscipit impedit voluptate? Laudantium alias ipsum odio recusandae eligendi porro quidem ullam, tenetur delectus veniam, officia dolores!
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
-                            What kind of support do you provide after I reach my destination?
-                        </button>
-                    </h2>
-                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            We don’t stop helping once you leave your home country. Our dedicated student support team
-                            assists you during your initial days abroad by guiding you through airport pickups,
-                            temporary housing, and orientation programs. We also provide ongoing support in adjusting
-                            to cultural differences, connecting with student communities, and even career counseling
-                            for internships and part-time jobs. You will always have access to our 24/7 helpline for
-                            emergencies or urgent assistance, ensuring a smooth transition and peace of mind.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#destinations">Destinations</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact us</a></li>
+          </ul>
         </div>
-    </section>
 
-
-    <!-- Partners -->
-    <section id="partners" class="">
-        <div class="container text-center">
-            <div class="section_header">
-                <h2 class="section-title">Our Partner Universities</h2>
-                <p class="section-subtitle">We collaborate with globally recognized universities to provide you
-                    opportunities.</p>
-                <i class="bi bi-caret-down-fill fs-3 fade-up delay-2"></i>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="col-md-4 col-12 mb-4">
-                    <div class="card h-100 border-0 bg-transparent">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/University_of_Oxford.svg/2560px-University_of_Oxford.svg.png"
-                            class="partner-logo mx-auto img-fluid" alt="University of Oxford">
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 mb-4">
-                    <div class="card h-100 border-0 bg-transparent">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/2560px-Harvard_University_logo.svg.png"
-                            class="partner-logo mx-auto img-fluid" alt="Harvard University">
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 mb-4">
-                    <div class="card h-100 border-0 bg-transparent">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MIT_Logo_and_Wordmark.svg/2560px-MIT_Logo_and_Wordmark.svg.png"
-                            class="partner-logo mx-auto img-fluid" alt="MIT">
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Destinations</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">United Kingdom</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">United States</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Canada</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Natherlands</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Malta</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="my_bg_light">
-        <div class="container text-center">
-            <div class="section_header">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Get in touch with our counselors to start your journey today.</p>
-                <i class="bi bi-caret-down-fill fs-3 fade-up delay-2"></i>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="col-md-8">
-                    <form class="bg-white p-4 rounded-4 shadow-sm">
-                        <div class="row g-3">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name"
-                                    required></div>
-                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address"
-                                    required></div>
-                            <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number">
-                            </div>
-                            <div class="col-md-6">
-                                <select class="form-select" required>
-                                    <option value="">Interested Country</option>
-                                    <option>UK</option>
-                                    <option>Canada</option>
-                                    <option>Australia</option>
-                                    <option>USA</option>
-                                    <option>Germany</option>
-                                    <option>Japan</option>
-                                </select>
-                            </div>
-                            <div class="col-12"><textarea class="form-control" rows="4"
-                                    placeholder="Your Message"></textarea></div>
-                        </div>
-                        <button class="btn my_button btn-lg w-100 mt-3">Send Message</button>
-                    </form>
-                </div>
-            </div>
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay connected with us on social media and explore our latest updates, insights, and success stories.</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer pt-5 pb-4">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="assets/images/logo_light.png" alt="Leap2Learn Logo" class="img-fluid footer-logo">
-                    </div>
-                    <p>Gateway to Dream - Helping students achieve their study abroad goals since 2014.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#faq">FAQs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact Info</h5>
-                    <p>Email: info@leap2learn.com<br>Phone: +880 1234 567890<br>Address: Sylhet, Bangladesh</p>
-                    <div class="d-flex gap-3 fs-4">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4"><small>&copy; 2025 Leap2Learn. All rights reserved. | Developed By <a
-                        href="http://www.bcoderapp.com">BCODER</a></small></div>
-        </div>
-    </footer>
+      </div>
+    </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // sticky nav
-        const nav = document.querySelector("#mainNav");
-        window.addEventListener("scroll", () => { if (window.scrollY > 50) { nav.classList.add("sticky"); } else { nav.classList.remove("sticky"); } });
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Leap2Learn</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Developed by <a href="www.bcoderapp.com">BCODER</a>
+      </div>
+    </div>
 
-        // scroll reveal
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { entry.target.classList.add("animate"); }
-            });
-        }, { threshold: 0.2 });
-        document.querySelectorAll(".section-title,.section-subtitle,.feature-card").forEach(el => observer.observe(el));
-    </script>
+  </footer>
+
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- jQuery (needed for Owl Carousel) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
